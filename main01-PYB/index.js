@@ -62,7 +62,7 @@ resultButton.addEventListener("click", (event) => {
   categories.forEach((category) => {
     const activeOption = category.querySelector(".mbti-option.active");
     if (activeOption) {
-      const mbtiChar = activeOption.textContent.slice(-2, -1); // 마지막 괄호 안 알파벳 추출
+      const mbtiChar = activeOption.textContent.slice(0, 1); // 마지막 괄호 안 알파벳 추출
       mbtiResult += mbtiChar;
     }
   });
