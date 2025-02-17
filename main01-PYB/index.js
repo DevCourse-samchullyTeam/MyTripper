@@ -129,7 +129,7 @@ function logout() {
   updateHeaderBasedOnLoginStatus(); // 헤더 업데이트
   updateResultButtonVisibility(); // 결과보기 버튼 업데이트
   alert('로그아웃 되었습니다.');
-  window.location.href = '/MyTripper/docs/index.html'; // 메인 페이지로 이동 (원하는 페이지로 변경 가능)
+  window.location.href = '../main01-PYB/index.html'; // 메인 페이지로 이동 (원하는 페이지로 변경 가능)
 
   // (선택 사항) 서버에 로그아웃 요청을 보낼 수도 있습니다.
   // fetch("http://localhost:3000/logout", { method: "POST" });
