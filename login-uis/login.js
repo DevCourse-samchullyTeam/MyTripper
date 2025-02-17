@@ -36,14 +36,14 @@ document.getElementById('login-form').addEventListener('submit', async (event) =
         (이전_페이지_URL.endsWith(회원가입_페이지_URL) || 이전_페이지_URL.endsWith(비밀번호_재설정_페이지_URL))
       ) {
         // 이전 페이지가 회원가입 페이지 또는 비밀번호 재설정 페이지인 경우 메인 페이지로 이동
-        window.location.href = '../docs/index.html'; // ⚠️ 메인 페이지 경로 (실제 경로로 수정!)
+        window.location.href = '../main01-PYB/index.html'; // ⚠️ 메인 페이지 경로 (실제 경로로 수정!)
       } else {
         // 이전 페이지가 회원가입 페이지나 비밀번호 재설정 페이지가 아닌 경우 기존 로직 적용
         if (이전_페이지_URL) {
           window.location.href = 이전_페이지_URL;
         } else {
           // 이전 페이지 URL이 없는 경우 기본 페이지로 이동
-          window.location.href = '../docs/index.html'; // ⚠️ 메인 페이지 경로 (실제 경로로 수정!)
+          window.location.href = '../main01-PYB/index.html'; // ⚠️ 메인 페이지 경로 (실제 경로로 수정!)
         }
       }
     } else {
