@@ -6,9 +6,11 @@ document.getElementById('login-form').addEventListener('submit', async (event) =
   const user_id = document.getElementById('user_id').value;
   const password = document.getElementById('password').value;
 
+  // https://nifty-curly-map.glitch.me
+  // http://localhost:3000/login
   try {
     // 로그인 요청을 백엔드로 보냄
-    const response = await fetch('http://localhost:3000/login', {
+    const response = await fetch('https://nifty-curly-map.glitch.me/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ user_id, password }), // JSON 형식으로 데이터 전송
@@ -19,7 +21,7 @@ document.getElementById('login-form').addEventListener('submit', async (event) =
     if (response.ok) {
       alert('로그인 성공! 아이디:, ' + result.data.name); // 성공 메시지 표시
       // JWT를 localStorage에 저장
-      localStorage.setItem('token', result.data.token);
+      localStorage.setItem('token', result.data.user_id);
       localStorage.setItem('user_id', result.data.user_id);
 
       // 이전 페이지 URL 확인
